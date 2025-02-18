@@ -27,8 +27,6 @@ This project is a **Spring Boot REST API** that monitors **patient heart rates**
 ✔️ **Patient Management** → Add & retrieve patient details.  
 ✔️ **Heart Rate Monitoring** → Record & fetch heart rate data.  
 ✔️ **H2 Database Support** → In-memory database for quick testing.  
-✔️ **Swagger API Documentation** → Interactive API documentation.  
-
 ---
 
 ## ⚙️ Tech Stack
@@ -40,7 +38,7 @@ This project is a **Spring Boot REST API** that monitors **patient heart rates**
 | **H2 Database**  | In-memory DB for testing           |
 | **Lombok**       | Reduces boilerplate code           |
 | **Maven**        | Dependency management              |
-| **Swagger UI**   | API documentation and testing      |
+| **Postman**   | API testing      |
 
 ---
 
@@ -66,7 +64,6 @@ mvn spring-boot:run
 ### 4️⃣ Access API
 
 - **Base URL:** [`http://localhost:8080`](http://localhost:8080)
-- **Swagger API Docs:** [`http://localhost:8080/swagger-ui.html`](http://localhost:8080/swagger-ui.html)
 - **H2 Database Console:** [`http://localhost:8080/h2-console`](http://localhost:8080/h2-console)
   - **JDBC URL:** `jdbc:h2:mem:pulsemonitor`
   - **Username:** `sa`
@@ -81,8 +78,6 @@ mvn spring-boot:run
 3. **Database Relationships:**
    - A **User** can manage **multiple Patients**.
    - A **Patient** can have **multiple Heart Rate Records**.
-4. **Cascading Deletes** → If a Patient is deleted, their heart rate records are also removed.
-5. **Swagger UI integrated** → For easy API testing.
 
 ---
 
